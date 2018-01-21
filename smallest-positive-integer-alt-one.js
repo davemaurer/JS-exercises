@@ -8,10 +8,13 @@ function solution(nums) {
   if (nums.length === 0 || nums[0] > 1) {
     return 1
   }
-  let smallest = 1;
+  let smallest = 2;
   nums.forEach(function(num) {
-    if (num > 0 && )
+    if (num > 0 && smallest.includes(num)) {
+      smallest += 1
+    }
   });
+  return smallest;
 }
 
 console.log(solution(arr));
