@@ -10,14 +10,15 @@ function solution(nums) {
     return 1;
   }
   let sorted = nums.filter(num => num > 0).sort();
+  let smallest = 0;
   for (let num of sorted) {
-    let n = num - 1;
-    if (n > 0 && !sorted.includes(n)) {
-      return n
+    if (num > 0 && !sorted.includes(num)) {
+      if ()
     } else if (!sorted.includes(num + 1)) {
-      return num + 1
+      return num + 1;
     }
   }
+  return smallest;
 }
 
 console.log(solution(arr));
